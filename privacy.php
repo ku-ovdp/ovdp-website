@@ -70,14 +70,14 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li class="active"><a href="#">Privacy</a></li>
         </ul>
         <h3 class="muted">Open Voice Data Project</h3>
       </div>
-
+      
       <hr>
 
       <div class="jumbotron">
