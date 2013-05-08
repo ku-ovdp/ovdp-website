@@ -90,6 +90,12 @@
           databases, supporting further research in the field.</p>
       </div>
 
+      <hr>
+      <div class="footer">
+        <p>&copy; Open Voice Data Project 2013</p>
+      </div>
+
+
     </div> <!-- /container -->
 
     <!-- Le javascript
