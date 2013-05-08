@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="refresh" content="5">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -83,8 +84,25 @@
       <div class="jumbotron">
         <h1>Open Voice Data Project</h1><br>
         <p class="lead">Open Voice Data Project (OVDP) hosts and provides collection tools for dysphonia (voice disorder) data sets.</p>
-        <p class="lead">Our first collection project focuses on Parkinson's Disorder.</p>
-        <a class="btn btn-large btn-success" href="https://www.michaeljfox.org/understanding-parkinsons/index.html">Read more about Parkinson's</a>
+        <p class="lead">Our first collection project focuses on
+        Parkinson's Disorder.</p>
+        <p style="width: 60%; margin: 1em auto" class="well lead text-center">Project status:
+          <bold class="text-info lead">
+                     <?php
+              $endpoint = 'http://api.openvoicedata.org/v1/project/1/sessions';
+              $handle = curl_init($endpoint);
+              curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+              $contents = curl_exec($handle);
+              curl_close($handle);
+              $response = json_decode($contents, true);
+              print(count($response));
+              
+          ?></bold> samples collected.<br></p>
+ 
+        <a class="btn btn-large btn-success"
+        href="https://www.michaeljfox.org/understanding-parkinsons/index.html">Read
+        more about Parkinson's</a>
+        
       </div>
 
       <hr>
@@ -92,6 +110,8 @@
       <div class="row-fluid marketing">
         <div class="span6">
           <h4>Open Datasets</h4>
+          <p>
+          </p>
           <p>Many medical research efforts restrict access to the data they gather. OVDP provides open access to all of the data it gathers.</p>
 
           <h4>Enabling Researchers</h4>
