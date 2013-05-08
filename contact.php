@@ -70,7 +70,7 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li><a href="index.php">Home</a></li>
+          <li><a href="./">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li class="active"><a href="#">Contact</a></li>
           <li><a href="privacy.php">Privacy</a></li>
