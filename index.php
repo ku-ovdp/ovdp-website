@@ -84,7 +84,7 @@
         <h1>Open Voice Data Project</h1><br>
         <p class="lead">Open Voice Data Project (OVDP) hosts and provides collection tools for dysphonia (voice disorder) data sets.</p>
         <p class="lead">Our first collection project focuses on Parkinson's Disorder.</p>
-        <p class="lead"><a href="https://www.michaeljfox.org/understanding-parkinsons/index.html">Read more about Parkinson's</a>.</p>
+        <a class="btn btn-large btn-success" href="https://www.michaeljfox.org/understanding-parkinsons/index.html">Read more about Parkinson's</a>
       </div>
 
       <hr>
