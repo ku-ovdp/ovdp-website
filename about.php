@@ -82,8 +82,12 @@
 
       <div class="row-fluid marketing">
           <h4>About OVDP</h4>
-          <p>The Open Voice Data Project started as a senior design
-          project at the <a href="http://www.ku.edu">University of Kansas</a> School of Engineering.</p>
+          <p>The Open Voice Data Project was started as a senior design
+          project at the <a href="http://www.ku.edu">University of
+          Kansas</a> <a href="http://www.engr.ku.edu">School of
+          Engineering.</a> Our goal is to encourage and facilitate
+          the creation of publically accessible dysphonia sample
+          databases, supporting further research in the field.</p>
       </div>
 
     </div> <!-- /container -->

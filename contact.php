@@ -80,25 +80,22 @@
 
       <hr>
 
-      <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>Open Datasets</h4>
-          <p>Many medical research efforts restrict access to the data they gather. OVDP provides open access to all of the data it gathers.</p>
-
-          <h4>Enabling Researchers</h4>
-          <p>Any interested party, public or private, may use our data sets (all non-personally-identifiable) to research various aspects of dysphonia.</p>
-
+      <form class="row-fluid marketing" method="post">
+        <legend>Get in touch:</legend>
+        <div class="control-group">
+          <label class="control-label" for="emailTopic">Topic:</label>
+          <select id="emailTopic" name="emailTopic">
+            <option>Android app question</option>
+            <option>Developer/reseacher access request</option>
+            <option>Other</option>
+          </select>
         </div>
-
-        <div class="span6">
-          <h4>Machine Learning</h4>
-          <p>We select the attributes in our datasets in consultation with the latest research in machine learning and medical diagnosis, to support further research in this groundbreaking field.</p>
-
-          <h4>Involving Patients</h4>
-          <p>Patients who contribute their data can make a difference in research efforts into diagnosis, treatment, and therapy for the conditions that affect them.</p>
-
-        </div>
-      </div>
+        <textarea rows="8"></textarea>
+        <div class="control-group">
+          <button type="submit" value="" class="btn btn-primary">Submit</button>
+        </div>  
+      </form>
+       
 
       <hr>
 

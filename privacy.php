@@ -80,33 +80,21 @@
       
       <hr>
 
-      <div class="jumbotron">
-        <h1>Open Voice Data Project</h1><br>
-        <p class="lead">Open Voice Data Project (OVDP) hosts and provides collection tools for dysphonia (voice disorder) data sets.</p>
-        <p class="lead">Our first collection project focuses on Parkinson's Disorder.</p>
-        <p class="lead"><a href="https://www.michaeljfox.org/understanding-parkinsons/index.html">Read more about Parkinson's</a>.</p>
-
-        <a class="btn btn-large btn-success" href="#">View Project Parkinson's</a>
-      </div>
-
-      <hr>
-
-      <div class="row-fluid marketing">
+       <div class="row-fluid marketing">
         <div class="span6">
-          <h4>Open Datasets</h4>
-          <p>Many medical research efforts restrict access to the data they gather. OVDP provides open access to all of the data it gathers.</p>
+          <h4>Ensuring Contributor Privacy</h4>
+          <p> We ensure contributors' privacy by anonymizing
+          all collected data.</p>
 
-          <h4>Enabling Researchers</h4>
-          <p>Any interested party, public or private, may use our data sets (all non-personally-identifiable) to research various aspects of dysphonia.</p>
+          
 
         </div>
 
         <div class="span6">
-          <h4>Machine Learning</h4>
-          <p>We select the attributes in our datasets in consultation with the latest research in machine learning and medical diagnosis, to support further research in this groundbreaking field.</p>
-
-          <h4>Involving Patients</h4>
-          <p>Patients who contribute their data can make a difference in research efforts into diagnosis, treatment, and therapy for the conditions that affect them.</p>
+          <h4>HIPAA Compliance</h4>
+          <p>Contributors must authorize OVDP to use the samples they
+          provide; this is done as a prerequisite to submission on our
+          android app.</p>
 
         </div>
       </div>
