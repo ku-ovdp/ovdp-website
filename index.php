@@ -153,15 +153,14 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
 
+    <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
     <script type="text/javascript">
-      if (window.WebSocket) {
-        var ws = new WebSocket("ws://api.openvoicedata.org/statistics");
-        ws.onmessage = function(msg) {
-          var data = jQuery.parseJSON(msg.data);
-          $('#total-sessions').text(data.sessions);
-        }
-      }
+      var sock = new SockJS('http://api.openvoicedata.org/stats', null, {
+        'protocols_whitelist':['xhr-polling']
+      });
+      sock.onmessage = function(msg) {
+          $('#total-sessions').text(msg.data.sessions);
+      };
     </script>
-
   </body>
 </html>
