@@ -155,7 +155,7 @@
 
     <script type="text/javascript">
       if (window.WebSocket) {
-        var ws = new WebSocket("ws://localhost:5000/statistics");
+        var ws = new WebSocket("ws://api.openvoicedata.org/statistics");
         ws.onmessage = function(msg) {
           var data = jQuery.parseJSON(msg.data);
           $('#total-sessions').text(data.sessions);
