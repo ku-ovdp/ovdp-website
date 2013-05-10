@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta http-equiv="refresh" content="5">
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -87,7 +86,7 @@
         <p class="lead">Our first collection project focuses on
         Parkinson's Disorder.</p>
         <p style="width: 60%; margin: 1em auto" class="well lead text-center">Project status:
-          <bold class="text-info lead">
+          <bold id="total-sessions" class="text-info lead">
                      <?php
               $endpoint = 'http://api.openvoicedata.org/v1/project/1/sessions';
               $handle = curl_init($endpoint);
@@ -153,6 +152,16 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+
+    <script type="text/javascript">
+      if (window.WebSocket) {
+        var ws = new WebSocket("ws://localhost:5000/statistics");
+        ws.onmessage = function(msg) {
+          var data = jQuery.parseJSON(msg.data);
+          $('#total-sessions').text(data.sessions);
+        }
+      }
+    </script>
 
   </body>
 </html>
