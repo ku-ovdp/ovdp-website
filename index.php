@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet"i>
     <style type="text/css">
       body {
         padding-top: 20px;
