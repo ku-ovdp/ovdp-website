@@ -1,0 +1,27 @@
+{{define "extra_head"}}<link href="assets/css/front.css" rel="stylesheet">{{end}}
+{{define "nav"}}
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li class="active"><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+{{end}}
+{{define "content"}}
+      <form class="row-fluid marketing" method="post">
+        <legend>Get in touch:</legend>
+        <div class="control-group">
+          <label class="control-label" for="emailTopic">Topic:</label>
+          <select id="emailTopic" name="emailTopic">
+            <option>Android app question</option>
+            <option>Developer/reseacher access request</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <textarea rows="8"></textarea>
+        <div class="control-group">
+          <button type="submit" value="" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+{{end}}
+{{define "extra_footer"}}{{end}}
+{{template "base.html" .}}
