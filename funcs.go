@@ -5,11 +5,13 @@ import (
 	"html/template"
 	"net/http"
 	"encoding/json"
+	"time"
 )
 
 // functions accessible to the templates
 var funcMap = template.FuncMap{
 	"stat": getStat,
+	"current_year": getCurrentYear,
 }
 
 // get a stat from the ovdp api
@@ -27,6 +29,10 @@ func getStat(stat string) template.HTML {
 		}
 		return template.HTML(fmt.Sprint(stats[stat]))
 	}
+}
+
+func getCurrentYear() int {
+	return time.Now().Year()
 }
 
 func renderError(err error) template.HTML {
