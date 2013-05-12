@@ -12,6 +12,8 @@ var funcMap = template.FuncMap{
 	"stat": getStat,
 }
 
+// get a stat from the ovdp api
+// @todo this should do some caching
 func getStat(stat string) template.HTML {
 	if r, err := http.Get(*apiEndpoint + "stats"); err != nil {
 		return renderError(err)
